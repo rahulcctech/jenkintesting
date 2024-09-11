@@ -1,0 +1,43 @@
+pipeline {
+    agent any
+ 
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout the current branch
+                checkout scm
+            }
+        }
+ 
+        stage('Restore NuGet Packages') {
+            steps {
+                script {
+                    // Restore the NuGet packages
+                    bat 'nuget restore ConsoleApp1.sln'
+                }
+            }
+        }
+ 
+        stage('Build') {
+            steps {
+                script {
+                    // Build the Visual Studio solution (.sln file)
+                    bat '"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe" ConsoleApp1.sln "'
+                }
+            }
+        }
+    }
+ 
+    post {
+        always {
+            // Archive build artifacts
+            archiveArtifacts artifacts: '**/bin/**/*.dll', allowEmptyArchive: true
+        }
+        success {
+            echo 'Build and tests were successful!'
+        }
+        failure {
+            echo 'Build or tests failed.'
+        }
+    }
+}
