@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     // Build the Visual Studio solution (.sln file)
-                    bat '"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\MSBuild\\Current\\Bin\\MSBuild.exe" ConsoleApp1.sln "'
+                    bat '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe" ConsoleApp1.sln "'
                 }
             }
         }
