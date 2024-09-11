@@ -1,0 +1,124 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]eleases/
+[Rr]eleasesPublic/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+[Bb]in/
+[Oo]bj/
+[Ll]ogs/
+[Ll]og/
+*.dmp
+*.pdb
+*.exe
+*.dll
+*.lib
+*.obj
+*.so
+*.dylib
+*.ipa
+*.app
+*.appx
+*.appxbundle
+*.nupkg
+*.vsix
+*.suo
+*.user
+*.userosscache
+*.suo
+*.tlog
+*.vscode/
+*.vs/*
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Rider plugins
+.idea/
+.idea/modules.xml
+.idea/.idea/
+.idea/.idea_modules.xml
+.idea/.idea_workspace.xml
+.idea/.idea_classpath.xml
+.idea/.idea_*.xml
+
+# NuGet
+*.nupkg
+*.snupkg
+*.pkg
+*.dotnet/
+*.nuget/
+*.nuget_packages/
+*.nuget_cache/
+
+# Others
+*.dbmdl
+*.bak
+*.sql
+*.swp
+*.tmp
+*.temp
+*.suo
+*.user
+*.userosscache
+*.vs
+*.vscode/
+*.settings/
+*.launch/
+*.jfm/
+*.fth
+*.vsix
+*.nupkg
+*.snupkg
+*.pkg
+
+# Folder for temporary files and logs
+[Tt]emp/
+*.tmp
+*.temp
+
+# Auto-generated files
+*.generated.cs
+*.generated.vb
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Azure Pipelines
+*.build/
+*.release/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Additional C++ build output
+*.vs
+*.vspscc
+
+# Other files
+*.cache
+*.log
+*.pid
+*.pdb
+*.dll
+*.exe
+*.apk
+*.ap_
+*.tar
+*.gz
+*.zip
+*.7z
+*.tar.gz
+*.tgz
+*.rar
+*.gzip
+*.rar
+
+# Ignore .env files
+.env
